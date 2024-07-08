@@ -125,7 +125,7 @@ def block_to_olist(block):
     text = []
     count = 1
     for line in lines:
-        textnodes = text_to_textnodes(line.strip(f"{count}."))
+        textnodes = text_to_textnodes(line.strip(f"{count}. "))
         html_nodes = []
         for node in textnodes:
             html_nodes.append(TextNode.text_node_to_html_node(node))
